@@ -1,0 +1,442 @@
+
+*** Running vivado
+    with args -log test_env.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source test_env.tcl -notrace
+Command: synth_design -top test_env -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7172 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 281.719 ; gain = 72.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:44]
+INFO: [Synth 8-3491] module 'MPG1' declared at 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/MPG1.vhd:7' bound to instance 'deb1' of component 'MPG1' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'MPG1' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/MPG1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MPG1' (1#1) [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/MPG1.vhd:13]
+INFO: [Synth 8-3491] module 'MPG1' declared at 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/MPG1.vhd:7' bound to instance 'deb2' of component 'MPG1' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:178]
+INFO: [Synth 8-3491] module 'IFetch' declared at 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IFetch.vhd:36' bound to instance 'fetch1' of component 'IFetch' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'IFetch' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IFetch.vhd:52]
+WARNING: [Synth 8-614] signal 'pc' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IFetch.vhd:121]
+WARNING: [Synth 8-614] signal 'branchAdr' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IFetch.vhd:121]
+WARNING: [Synth 8-614] signal 'mux' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IFetch.vhd:132]
+WARNING: [Synth 8-614] signal 'jumpAdr' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IFetch.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'IFetch' (2#1) [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IFetch.vhd:52]
+INFO: [Synth 8-3491] module 'IDecode' declared at 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IDecode.vhd:37' bound to instance 'decode' of component 'IDecode' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'IDecode' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IDecode.vhd:55]
+WARNING: [Synth 8-614] signal 'RA2' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IDecode.vhd:100]
+WARNING: [Synth 8-614] signal 'instruction' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IDecode.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'IDecode' (3#1) [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/IDecode.vhd:55]
+INFO: [Synth 8-3491] module 'UC' declared at 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/UC.vhd:34' bound to instance 'UnitateControl' of component 'UC' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'UC' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/UC.vhd:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/UC.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'UC' (4#1) [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/UC.vhd:50]
+INFO: [Synth 8-3491] module 'Execute' declared at 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/Execute.vhd:36' bound to instance 'exec' of component 'Execute' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'Execute' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/Execute.vhd:53]
+WARNING: [Synth 8-614] signal 'RD2' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/Execute.vhd:71]
+WARNING: [Synth 8-614] signal 'ext_imm' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/Execute.vhd:71]
+INFO: [Synth 8-226] default block is never used [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/Execute.vhd:87]
+WARNING: [Synth 8-614] signal 'ALUResAux' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/Execute.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'Execute' (5#1) [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/Execute.vhd:53]
+INFO: [Synth 8-3491] module 'MEM' declared at 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/MEM.vhd:35' bound to instance 'Memorie' of component 'MEM' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'MEM' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/MEM.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (6#1) [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/MEM.vhd:51]
+INFO: [Synth 8-226] default block is never used [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:191]
+INFO: [Synth 8-226] default block is never used [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:201]
+WARNING: [Synth 8-614] signal 'instruction_if' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:199]
+WARNING: [Synth 8-614] signal 'nextPC_if' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:199]
+WARNING: [Synth 8-614] signal 'rd1_id' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:199]
+WARNING: [Synth 8-614] signal 'rd2_id' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:199]
+WARNING: [Synth 8-614] signal 'ext_imm_id' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:199]
+WARNING: [Synth 8-614] signal 'ALURes_ex' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:199]
+WARNING: [Synth 8-614] signal 'memData_m' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:199]
+WARNING: [Synth 8-614] signal 'wd_id' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:199]
+WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:232]
+INFO: [Synth 8-3491] module 'SSD1' declared at 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/SSD1.vhd:7' bound to instance 'rez_ssd' of component 'SSD1' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'SSD1' [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/SSD1.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'SSD1' (7#1) [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/SSD1.vhd:14]
+WARNING: [Synth 8-3848] Net ExtOp_uc in module/entity test_env does not have driver. [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:156]
+WARNING: [Synth 8-3848] Net jump_if in module/entity test_env does not have driver. [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (8#1) [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:44]
+WARNING: [Synth 8-3331] design IDecode has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IDecode has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design IDecode has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 319.188 ; gain = 110.016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fetch1:jump to constant 0 [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/sources_1/new/test_env.vhd:179]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 319.188 ; gain = 110.016
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 610.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:36 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:36 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:36 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom_memory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ZeroAux" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:36 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_env 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module MPG1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module IFetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module IDecode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+Module UC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 8     
+Module Execute 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MEM 
+Detailed RTL Component Info : 
++---RAMs : 
+	              256 Bit         RAMs := 1     
+Module SSD1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exec/ZeroAux" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design test_env has unconnected port led[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port led[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives      | 
++------------+-------------------------+-----------+----------------------+-----------------+
+|test_env    | Memorie/RAM_reg         | Implied   | 16 x 16              | RAM16X1S x 16   | 
+|test_env    | decode/reg_file_mem_reg | Implied   | 8 x 16               | RAM32M x 6      | 
++------------+-------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    16|
+|3     |LUT1     |    48|
+|4     |LUT2     |    10|
+|5     |LUT3     |    24|
+|6     |LUT4     |    37|
+|7     |LUT5     |    36|
+|8     |LUT6     |    33|
+|9     |MUXF7    |    13|
+|10    |RAM16X1S |    16|
+|11    |RAM32M   |     6|
+|12    |FDRE     |    46|
+|13    |IBUF     |     7|
+|14    |OBUF     |    19|
+|15    |OBUFT    |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------+--------+------+
+|      |Instance  |Module  |Cells |
++------+----------+--------+------+
+|1     |top       |        |   320|
+|2     |  Memorie |MEM     |    16|
+|3     |  deb1    |MPG1    |    50|
+|4     |  deb2    |MPG1_0  |     4|
+|5     |  decode  |IDecode |    49|
+|6     |  exec    |Execute |    33|
+|7     |  fetch1  |IFetch  |   133|
++------+----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:49 . Memory (MB): peak = 610.594 ; gain = 401.422
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 610.594 ; gain = 110.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:50 . Memory (MB): peak = 610.594 ; gain = 401.422
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:46 . Memory (MB): peak = 610.594 ; gain = 401.422
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.runs/synth_1/test_env.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 610.594 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 25 10:34:26 2015...

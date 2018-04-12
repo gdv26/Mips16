@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Apr 25 10:33:34 2015
+# Process ID: 6124
+# Current directory: C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log test_env.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+# Log file: C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.runs/synth_1/test_env.vds
+# Journal file: C:/Users/Vlad/Desktop/UTCN/UTCN_AN2/Sem2/Teme_Vivado/procesorMIPSFinal/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_env.tcl -notrace
